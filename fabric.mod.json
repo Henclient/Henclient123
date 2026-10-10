@@ -1,0 +1,29 @@
+{
+	"schemaVersion": 1,
+	"id": "henclient",
+	"version": "${version}",
+	"name": "HenClient Reborn",
+	"description": "A client-side Fabric utility client for Minecraft 1.21.11 with HUD, exploration tools and optional combat helpers.",
+	"authors": [
+		"Hendrik"
+	],
+	"license": "MIT",
+	"environment": "client",
+	"entrypoints": {
+		"client": [
+			"com.henclient.reborn.HenClientMod"
+		]
+	},
+	"mixins": [
+		{
+			"config": "henclient.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.19.5",
+		"minecraft": "~1.21.11",
+		"java": ">=21",
+		"fabric-api": "*"
+	}
+}
